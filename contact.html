@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Contact</title>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	</head>
+	<body>
+		<div id="header">
+			<div id="name">
+				<h1>John LaTona</h1>
+			</div>
+			<div id="navigation">
+				<ul>
+					<li><a href="index.html">About</a></li>
+					<li><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="contentBackground">
+			<div id="content">
+				<h1 id="contentHeading">Contact</h1>
+				<hr id="contentBreak">
+				<form action="contact.php" method="post">
+					Name<br>
+					<input type="text" name="cf_name" value="John Smith" class="inputFields" id="formName"><br>
+					Email<br>
+					<input type="text" name="cf_email" value="example@gmail.com" class="inputFields" id="formEmail"><br>
+					Message<br>
+					<textarea name="cf_message" class="inputFields" id="formMessage">
+					</textarea><br>
+					<input type="submit" value="Submit" id="submitButton">
+				</form>
+				
+			</div>
+			<div id="connect">
+				<h2 id="connectHeading">Connect With Me</h2>
+				<hr id="connectBreak">
+				<a href="https://github.com/johnlatona" target="_blank"><img src="assets/images/github.png" alt="Github" id="github" width="60px"></a>
+				<a href="https://www.linkedin.com/in/john-latona-70077479/" target="_blank"><img src="assets/images/linkedin.png" alt="LinkedIn" id="linkedin" width="60px"></a>
+				<a href="https://stackoverflow.com/users/8576109/john-latona" target="_blank"><img src="assets/images/stackoverflow.png" alt="Stack Overflow" id="stackoverflow" width="60px"></a>
+			</div>
+		</div>
+		<footer>©Copyright 2017 John LaTona</footer>
+	</body>
+</html>

@@ -1,0 +1,438 @@
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-family: Georgia, Times, Times New Roman, serif;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: Georgia, Times, Times New Roman, serif;
+	color: #4aaaa5;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+li {
+	color: #4aaaa5;
+	display: inline;
+	padding-right: 15px;
+	padding-left: 15px;
+	border-right: .5px solid #cccccc;
+	z-index: 2;
+}
+
+li:last-child {
+	border-right: none;
+}
+
+a:link {
+	text-decoration: none;
+	color: #777777;
+}
+
+a:visited {
+	text-decoration: none;
+	color: #777777;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #777777;
+}
+
+a:active {
+	text-decoration: underline;
+	color: #777777;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+    background:#fff url("../images/dust_scratches.png") center center no-repeat;
+    background-attachment: fixed;
+    background-size: 100% auto;
+    background-position: right top;
+    background-repeat: repeat;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+	margin-bottom: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cccccc;
+	color: #777777;
+}
+
+footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	height: 90px;
+	border-top: 6px solid #4aaaa5;
+	z-index: 1;
+	background-color: #666666;
+	margin-top: 30px;
+	padding: 35px;
+	font-size: 10px;
+	color: #ffffff;
+}
+
+#formName, #formEmail {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #cccccc;
+	color: #777777;
+}
+
+#submitButton {
+	background-color: #4aaaa5;
+	width: 80px;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #ffffff;
+	padding: 10px 5px 10px 5px;
+	text-align: center;
+	border-radius: 0;
+}
+
+#submitButton:hover {
+	background-color: #39827E;
+}
+
+#header {
+	background-color: #ffffff;
+	height: 90px;
+	border-bottom: 2px solid #cccccc;
+	z-index: 1;
+}
+
+#name {
+	background-color: #4aaaa5;
+	height: 100%;
+	width: 240px;
+	color: #ffffff;
+	float: left;
+	margin-left: 3.5vw;
+	padding: 30px;
+	text-align: center;
+	z-index: 2;
+
+}
+
+#navigation {
+	float: right;
+	margin-right: 3.5vw;
+	padding: 35px;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	font-size: 17px;
+}
+
+.nav {
+	display: inline;
+}
+
+#content {
+	width: 55vw;
+	float: left;
+	margin-left: 3.5vw;
+	background-color: #ffffff;
+	border: .3px solid #cccccc;
+	padding: 30px;
+	line-height: 2em;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	color: #777777;
+	margin-top: 5vw;
+	margin-bottom: 150px;
+}
+
+/*	width: 650px;
+	float: left;
+	margin-left: 155px;
+	background-color: #ffffff;
+	border: .3px solid #cccccc;
+	padding: 30px;
+	line-height: 2em;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	color: #777777;
+	margin-top: 55px;
+	margin-bottom: 150px;
+	*/
+
+#contentPortfolio {
+	width: 55vw;
+	float: left;
+	margin-left: 3.5vw;
+	background-color: #ffffff;
+	border: .3px solid #cccccc;
+	padding: 30px;
+	line-height: 2em;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	color: #777777;
+	margin-top: 5vw;
+	margin-bottom: 150px;
+}
+
+#contentHeading {
+	color: #4aaaa5;
+	padding-bottom: 20px;
+}
+
+#mainContent {
+	padding-top: 30px;
+}
+
+#contentBreak {
+	padding: 1px;
+	background-color: #cccccc;
+	border: none;
+	margin-bottom: 15px;
+}
+
+#profile {
+	float: left;
+	padding-right: 30px;
+	width: 50%;
+}
+
+#connect {
+	width: 33vw;
+	float: left;
+	margin-left: 5vw;
+	background-color: #ffffff;
+	border: .3px solid #cccccc;
+	padding: 30px;
+	line-height: 2em;
+	font-family: Georgia, Times, Times New Roman, serif;
+	margin-top: 5vw;
+	text-align: center;
+}
+
+#connect::after {
+	content: “”;
+	display: block;
+	clear: both;
+}
+
+#connectHeading {
+	padding-bottom: 7px;
+}
+
+#connectBreak {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 1px;
+	background-color: #cccccc;
+	border: none;
+}
+
+#github #linkedin #stackoverflow {
+	width: 1.2vw;
+}
+
+#github:hover {
+	opacity: 0.5;
+}
+
+#linkedin:hover {
+	opacity: 0.5;
+}
+
+#stackoverflow:hover {
+	opacity: 0.5;
+}
+
+.projectPic {
+	width: 47%;
+	height: 18vw;
+	margin-top: 30px;
+}
+
+
+#projectOne {
+	background-image: url("../images/placeholder1.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+
+}
+
+#projectTwo {
+	background-image: url("../images/placeholder2.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: right
+}
+
+#projectThree {
+	background-image: url("../images/placeholder3.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+#projectFour {
+	background-image: url("../images/placeholder4.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: right;
+}
+
+#projectFive {
+	background-image: url("../images/placeholder5.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.projectName {
+	width: 100%;
+	background-color: #4aaaa5;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	color: #ffffff;
+	font-size: 100%;
+	text-align: center;
+	padding-top: 3%;
+	padding-bottom: 3%;
+	margin-top: 53.5%;
+}
+/*
+#hangman, #rpgGame {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	margin-top: 54%;
+}
+
+#triviaGame {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	margin-top: 54%;
+}
+
+#rutgersInfoWidget, #rockPaperScissors {
+	padding-top: 3%;
+	padding-bottom: 3%;
+	margin-top: 54%;
+}
+*/
+
+@media screen and (max-width: 980px) {
+	#profile {
+		float: none;
+		width: 100%;
+	}
+
+	.projectPic {
+		width: 100%;
+		height: 37vw;
+	}
+
+	.projectName {
+		margin-top: 58%;
+	}
+}
+
+
+
+@media screen and (max-width: 768px) {
+	#content {
+		width: 93vw;
+		float: none;
+		margin-bottom: 5vw;
+	}
+
+	#contentPortfolio {
+		width: 93vw;
+		margin-bottom: 5vw;
+	}
+
+	.projectPic {
+		width: 47%;
+		height: 30vw;
+	}
+
+	#connect {
+		width: 93vw;
+		text-align: left;
+		margin-left: 3.5vw;
+		margin-bottom: 150px;
+		margin-top: 0;
+	}
+
+	#profile {
+		float: left;
+		padding-right: 30px;
+		width: 50%;
+	}
+
+	.projectName {
+		margin-top: 53%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	li {
+		padding: 0 10% 0 10%;
+		font-size: 3vw;
+	}
+
+	#headerName {
+		margin-bottom: 100px;
+	}
+
+	#name {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	#navigation {
+		float: none;
+		text-align: center;
+		width: 100%;
+		background-color: #ffffff;
+		padding-top: 110px;
+		border-bottom: 2px solid #cccccc;
+	}
+
+	#content {
+		margin-top: 15vw;
+	}
+
+	#profile {
+		float: none;
+		width: 100%;
+	}
+
+	.projectPic {
+		width: 100%;
+		height: 65vw;
+	}
+
+	.projectName {
+		margin-top: 56%;
+	}
+
+	#contentPortfolio {
+		margin-top: 100px;
+	}
+
+	#content {
+		margin-top: 100px ;
+	}
+
+}
+
